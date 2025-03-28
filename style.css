@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: "Inter", sans-serif; /* Исправлено */
+    font-family: "Inter", sans-serif;
     color: #303030;
     background-color: #ffffff;
 }
@@ -27,7 +27,7 @@ article {
     background-color: #ffffff;
     padding: 60px 0px;
     text-align: center;
-    min-height: 100vh; /* Исправлено */
+    min-height: 100vh; 
 }
 
 article h1 {
@@ -59,7 +59,7 @@ select {
     padding: 10px;
     font-size: 16px;
     border: 2px solid #ccc;
-    background-image: url("assets/arrow-down.svg"); /* Добавлена стрелка */
+    background-image: url("assets/arrow-down.svg");
     background-repeat: no-repeat;
     background-position: right 10px center;
 }
@@ -70,22 +70,27 @@ h2 {
     font-size: 24px;
 }
 
-ul, ol {
+ul {
     padding: 0px 20px;
+    list-style-type: none;
 }
 
 ul li {
-    list-style-image: url("assets/image2.png"); /* Исправлено */
-    padding-left: 20px;
+    list-style-image: url("assets/image2.png");
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 0 50%;
+    padding-left: 25px;
     margin-bottom: 10px;
 }
-[data-cy="hw2-frameworks-list-pre"] {
+ol {
     padding: 0px 20px;
 }
 
+
 input {
     font-size: 16px;
-    width: 100%;
+     width: 100%;
     padding: 10px;
     border: 2px solid #ccc;
     border-radius: 5px;
@@ -94,7 +99,7 @@ input {
 .addButton {
     padding: 10px;
     background-color: #3498db;
-    color:rgb(255, 255, 255);
+    color: rgb(255, 255, 255) !important; /* Используем !important для гарантированного применения цвета */
     border: none;
     font-size: 16px;
     cursor: pointer;
@@ -113,7 +118,7 @@ table {
     width: 100%;
     margin: 20px;
     font-size: 14px;
-    border-collapse: collapse; /* Исправлено */
+    border-collapse: collapse; 
 }
 
 th, td {
