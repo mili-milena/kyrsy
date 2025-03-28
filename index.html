@@ -7,29 +7,29 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header" >
-        <span>IT-INCUBATOR</span>
+    <header class="header" data-cy="hw2-header">
+        <span data-cy="hw2-header-span">IT-INCUBATOR</span>
     </header>
 
-    <article data-cy="hw1-section-main-pre">
-      <h1>Павлович Милена Сергеевна</h1>
-      <p>Я учусь в колледже на специальности "Техник-програмист". Так же люблю танцевать. Еще у меня есть кошечка, ее зовут Марта.</p>
-      <img src="./assets/marta.png" alt="Cat Marta">
+    <article data-cy="hw2-section-main-pre">
+      <h1 data-cy="hw2-main-title">Павлович Милена Сергеевна</h1>
+      <p data-cy="hw2-text">Я учусь в колледже на специальности "Техник-программист". Также люблю танцевать. Еще у меня есть кошечка, ее зовут Марта.</p>
+      <img src="./assets/marta.png" alt="Cat Marta" data-cy="hw2-main-image">
     </article>
 
-    <section data-cy="hw1-section-about-pre">
-        <h2>Выбор города</h2>
-        <select>
-        <option selected disabled="">Minsk</option>
-        <option selected disabled="">Pinsk</option>
-                    <option>Grodno</option>
-                    <option>Brest</option> 
-                    <option>Polotsk</option> 
+    <section data-cy="hw2-section-about-pre">
+        <h2 data-cy="hw2-section-title-pre">Выбор города</h2>
+        <select data-cy="hw2-select-pre">
+            <option selected disabled>Minsk</option>
+            <option>Pinsk</option>
+            <option>Grodno</option>
+            <option>Brest</option> 
+            <option>Polotsk</option> 
         </select>
-        <div data-cy="hw1-unordered-list-box-pre">
+        <div data-cy="hw2-frameworks-list-pre">
             <h2>Любимые Дорамы</h2>
             <ul>
                 <li>Вспыльчивый священник</li>
@@ -38,8 +38,8 @@
                 <li>Образцовое такси</li>
             </ul>
         </div>
-        <div data-cy="hw1-ordered-list-box-pre">
-            <h2>Мои любимые страны </h2>
+        <div data-cy="hw2-books-list-pre">
+            <h2>Мои любимые страны</h2>
             <ol>
                 <li>Корея</li>
                 <li>Тайланд</li>
@@ -47,39 +47,38 @@
                 <li>Италия</li>
             </ol>
         </div>
-        <div data-cy="hw1-skills-box-pre">
+        <div data-cy="hw2-skills-box-pre">
             <h2>Мои скиллы</h2>
-            <br>
             <fieldset>
                 <legend>Favorite Technologies</legend>
-            <label for="html">
-                <input id="html" type="checkbox" name="html" checked>
-                HTML
-            </label>
-            <label for="css">
-                <input id="css" type="checkbox" name="css" checked >
-                CSS
-            </label>
-            <label for="react">
-                <input id="react" type="checkbox" name="react">
-                React
-            </label>
-            <label for="sc">
-                <input id="sc" type="checkbox" name="sc">
-                Styled components
-            </label>
-        </fieldset>
-        
-        <input type="text" placeholder="Новый скилл">
-        <button>Отправить</button>
-        <hr>
+                <label for="html" data-cy="hw2-label-pre">
+                    <input id="html" type="checkbox" name="html" checked>
+                    HTML
+                </label>
+                <label for="css">
+                    <input id="css" type="checkbox" name="css" checked>
+                    CSS
+                </label>
+                <label for="react">
+                    <input id="react" type="checkbox" name="react">
+                    React
+                </label>
+                <label for="sc">
+                    <input id="sc" type="checkbox" name="sc">
+                    Styled components
+                </label>
+            </fieldset>
+            
+            <input type="text" placeholder="Новый скилл" data-cy="hw2-text-field-pre">
+            <button data-cy="hw2-btn-pre">Отправить</button>
+            <hr data-cy="hw2-line-pre">
         </div>
         
-        <table data-cy="hw-about-table-pre" border="">
+        <table data-cy="hw2-about-table-pre">
             <tr>
                 <th>п/п</th>
                 <th>Наименование</th>
-                <th>Количесво</th>
+                <th>Количество</th>
             </tr>
             <tr>
                 <td>1</td>
@@ -100,12 +99,10 @@
                 <td colspan="2">Итого</td>
                 <td>4</td>
             </tr>
-          
-            
         </table>
     </section>
-    <footer class="footer" data-cy="hw-footer-pre">
-        <a href="https://it-incubator.io/">it-incubator</a>
+    <footer class="footer" data-cy="hw2-footer-pre">
+        <a href="https://it-incubator.io/" data-cy="hw2-footer-link-pre">it-incubator</a>
     </footer>
 </body>
 </html>
