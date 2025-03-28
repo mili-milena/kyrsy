@@ -79,6 +79,9 @@ ul li {
     padding-left: 20px;
     margin-bottom: 10px;
 }
+[data-cy="hw2-frameworks-list-pre"] {
+    padding: 0px 20px;
+}
 
 input {
     font-size: 16px;
@@ -91,7 +94,7 @@ input {
 .addButton {
     padding: 10px;
     background-color: #3498db;
-    color: #ffffff;
+    color:rgb(255, 255, 255);
     border: none;
     font-size: 16px;
     cursor: pointer;
